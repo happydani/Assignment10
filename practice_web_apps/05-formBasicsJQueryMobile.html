@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JQuery Mobile Practice = Form Basics </title>
+	<!-- No HTML5 shiv required since jQuery and JQuery Mobile handle this -->
+	<link rel="stylesheet" href="../scripts/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="../scripts/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+	<!--first page	-->
+	<section id="firstPage" data-role="page">
+		<header data-role="header">
+			<h1>Form Basics</h1>
+		</header>
+		<!--new way to address articles -->
+		<article class="ui-content">
+			<form method="get" action="">
+				<label for="basic" >Basic Text Field</label>
+				<input type="text" name="basicField" id="basicField" value="" placeholder="place holder text"/>
+				
+				<label for="userName" class="ui-hidden-accessible">Your Name:</label>
+				<input type="text" name="userName" id="userName" value="" placeholder="Your Name"/>
+				<div class="ui-field-contain">
+					<label for="address">Your Address:</label>
+					<input type="text" name="address" id="address" value="" placeholder="Your address">
+					<label for="city">Your City:</label>
+					<input type="text" name="city" id="city" value="" placeholder="Your City">
+				</div>
+			</form>
+		</article>
+		<footer data-role="footer">
+			<h2>Footer page content</h2>
+		</footer>
+	</section>
+
+</body>
+
+</html>

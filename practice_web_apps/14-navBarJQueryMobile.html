@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JQuery Mobile Practice = Nav Bar</title>
+	<!-- No HTML5 shiv required since jQuery and JQuery Mobile handle this -->
+	<link rel="stylesheet" href="../scripts/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="../scripts/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+	<!--first page	-->
+	<section id="firstPage" data-role="page">
+		<header data-role="header">
+			<h1>Header Bar</h1>
+			<nav data-role='navbar'>
+				<ul>
+					<li><a href="#" class="ui-btn ui-icon-plus ui-btn-icon-top ui-btn-active ui-state-persist">One</a></li>
+					<li><a href="#secondPage" class="ui-btn ui-icon-minus ui-btn-icon-top">Two</a></li>
+					<li><a href="#" class="ui-btn ui-icon-check ui-btn-icon-top">Three</a></li>
+					<li><a href="#" class="ui-btn ui-icon-grid ui-btn-icon-top">Four</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!--new way to address articles -->
+		<article class="ui-content">
+			<p>Lorem ipsom text asdlfkjasd;f lasdf;lkjadf adsfj</p>
+		</article>
+		<footer data-role="footer"  data-position="fixed">
+			<h2>footer</h2>
+		</footer>
+	</section>
+	
+	
+	<section id="secondPage" data-role="page">
+		<header data-role="header">
+			<h1>Header Bar</h1>
+		</header>
+		<nav data-role='navbar'>
+				<ul>
+					<li><a href="#firstPage" class="ui-btn ui-icon-plus ui-btn-icon-top ">One</a></li>
+					<li><a href="#secondPage" class="ui-btn ui-icon-minus ui-btn-icon-top ui-btn-active  ui-state-persist">Two</a></li>
+					<li><a href="#" class="ui-btn ui-icon-check ui-btn-icon-top">Three</a></li>
+					<li><a href="#" class="ui-btn ui-icon-grid ui-btn-icon-top">Four</a></li>
+				</ul>
+			</nav>
+		<!--new way to address articles -->
+		<article class="ui-content">
+			<p>This is page 2</p>
+		</article>
+		<footer data-role="footer"  data-position="fixed">
+			<h2>footer</h2>
+		</footer>
+	</section>
+
+</body>
+
+</html>

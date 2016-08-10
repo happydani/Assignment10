@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JQuery Mobile Practice = Form  Radio and Checkboxes </title>
+	<!-- No HTML5 shiv required since jQuery and JQuery Mobile handle this -->
+	<link rel="stylesheet" href="../scripts/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="../scripts/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+	<!--first page	-->
+	<section id="firstPage" data-role="page">
+		<header data-role="header">
+			<h1>Form Radio and Checkboxes</h1>
+		</header>
+		<!--new way to address articles -->
+		<article class="ui-content">
+			<form method="get" action="">
+				<fieldset data-role="control-group">
+					<legend>Select an option</legend>
+					<label for="rb1">Radio Button 1</label>
+					<input checked type="radio" name="rb" id="rb1" value="rb1">
+					
+					<label for="rb2">Radio Button 2</label>
+					<input type="radio" name="rb" id="rb2" value="rb2">
+					
+					<label for="rb3">Radio Button 3</label>
+					<input type="radio" name="rb" id="rb3" value="rb3">
+					
+					<label for="rb4">Radio Button 4</label>
+					<input type="radio" name="rb" id="rb4" value="rb4">
+				</fieldset>
+				<fieldset data-role="controlgroup" data-type="horizontal">
+					<legend>Select an option</legend>
+					<label for="rb5">Radio Button 1</label>
+					<input checked type="radio" name="rba" id="rb5" value="rb1">
+					
+					<label for="rb6">Radio Button 2</label>
+					<input type="radio" name="rba" id="rb6" value="rb2">
+					
+					<label for="rb7">Radio Button 3</label>
+					<input type="radio" name="rba" id="rb7" value="rb3">
+					
+					<label for="rb8">Radio Button 4</label>
+					<input type="radio" name="rba" id="rb8" value="rb4">
+				</fieldset>
+				<fieldset data-role="controlgroup">
+					<legend>Agree to the terms</legend>
+					<label for="cb1">I agree</label>
+					<input type="checkbox" name="cb1" id="cb1" />
+				</fieldset>
+				<fieldset data-role="controlgroup">
+					<legend>Choose your favorite turtle</legend>
+					<label for="gt">Green Turtle</label>
+					<input type="checkbox" name="gt" id="gt" />
+					<label for="lt">Leatherback Turtle</label>
+					<input type="checkbox" name="lt" id="lt" />
+					<label for="ht">Hawksbill Turtle</label>
+					<input type="checkbox" name="ht" id="ht" />
+					<label for="rt">Ridley Turtle</label>
+					<input type="checkbox" name="rt" id="rt" />
+					
+				</fieldset>
+				
+			</form>
+		</article>
+		<footer data-role="footer">
+			<h2>Footer page content</h2>
+		</footer>
+	</section>
+
+</body>
+
+</html>

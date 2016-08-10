@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JQuery Mobile Practice - Toolbar Persistance</title>
+	<!-- No HTML5 shiv required since jQuery and JQuery Mobile handle this -->
+	<link rel="stylesheet" href="../scripts/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="../scripts/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript">
+		/*This script keeps the toolbars persistent on the page */
+		$(function(){
+			$("[data-role='header'],[data-role='footer']").toolbar();
+		});
+	</script>
+</head>
+
+<body>
+	<header data-role="header" data-position="fixed" data-theme="a">
+		<h1>Header Bar</h1>
+	</header>
+	<section id="firstPage" data-role="page">
+
+		<div class="ui-content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quis minima delectus ab maiores quae mollitia commodi a atque esse qui dolorum in excepturi error eligendi repudiandae exercitationem, aliquam vitae aperiam necessitatibus eaque hic tenetur velit. Repellendus beatae dolorum voluptatum porro a voluptatibus nam vitae. Veniam dolores repellendus, illo perferendis?</p>
+			<p><a href="externalPage1.html">Link to external page</a></p>
+
+		</div>
+	</section>
+	<footer data-role="footer" data-position="fixed" data-theme="a" data-tap-toggle="false">
+		<h2>footer</h2>
+	</footer>
+</body>
+
+</html>

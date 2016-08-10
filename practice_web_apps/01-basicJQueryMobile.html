@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JQuery Mobile Practice</title>
+	<!-- No HTML5 shiv required since jQuery and JQuery Mobile handle this -->
+	<link rel="stylesheet" href="../scripts/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="../scripts/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+	<!--first page	-->
+	<section id="firstPage" data-role="page">
+		<header data-role="header">
+			<h1>Page 1 Header</h1>
+		</header>
+		<!--new way to address articles -->
+		<article data-role="main" class="ui-content">
+			<p>This is the content for Page 1</p>
+			<p><a href="#secondPage">Link to Page 2</a></p>
+		</article>
+		<footer data-role="footer">
+			<h2>Footer page content</h2>
+		</footer>
+	</section>
+	<!--second page-->
+	<section id="secondPage" data-role="page">
+		<header data-role="header">
+			<h1>Page 2 Header</h1>
+		</header>
+		<article data-role="main" class="ui-content">
+			<p>This is the content for Page 2</p>
+			<p><a href="#firstPage">Link to Page 1</a></p>
+		</article>
+		<footer data-role="footer">
+			<h2>Footer page content</h2>
+		</footer>
+	</section>
+</body>
+
+</html>

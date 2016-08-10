@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JQuery Mobile Practice = Toggle Switch</title>
+	<!-- No HTML5 shiv required since jQuery and JQuery Mobile handle this -->
+	<link rel="stylesheet" href="../scripts/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="../scripts/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+	<!--first page	-->
+	<section id="firstPage" data-role="page">
+		<header data-role="header">
+			<h1>Form Toggle Switch</h1>
+		</header>
+		<!--new way to address articles -->
+		<article class="ui-content">
+			<form method="get" action="">
+				<fieldset class="ui=field-contain">
+				<label for="ts1">Flip Switch</label>
+				<select name="ts1" id="ts1" data-role="flipswitch">
+					<option value="No" selected>No</option>
+					<option value="Yes" >Yes</option>
+				</select>
+				</fieldset>
+				
+				<!--the default values for the verbiage is On and Off (can't change this so use the above if you want to customize the labels-->
+				<fieldset data-role="control-group">
+				<label for="ts2">Flip Switch</label>
+				<input type="text" name="ts2" checked data-role="flipswitch">
+				</fieldset>
+			</form>
+		</article>
+		<footer data-role="footer">
+			<h2>Footer page content</h2>
+		</footer>
+	</section>
+
+</body>
+
+</html>

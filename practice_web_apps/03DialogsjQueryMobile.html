@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JQuery Mobile Practice - Using a page as a dialog</title>
+	<!-- No HTML5 shiv required since jQuery and JQuery Mobile handle this -->
+	<link rel="stylesheet" href="../scripts/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="../scripts/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+	<section id="firstPage" data-role="page">
+		<header data-role="header">
+			<h1>Header Page Content</h1>
+		</header>
+		<div class="ui-content">
+			<p>This is page 1</p>
+			<p><a href="#secondPage">Display dialog</a></p>
+			
+		</div>
+		<footer data-role="footer"><h2>Footer page content</h2></footer>
+	</section>
+	<section id="secondPage"  data-role="page" data-dialog="true" data-close-btn="right" data-theme="c"> <!--a is the default-->
+		<header data-role="header"> 
+			<h1>Dialog Title</h1>
+		</header>
+		<div class="ui-content">
+			<p>This page contains dialog content</p>
+		</div>
+		<footer data-role="footer"><h2>Dialog Footer</h2></footer>
+	</section>
+</body>
+
+</html>

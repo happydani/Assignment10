@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JQuery Mobile Practice = Page Transitions </title>
+	<!-- No HTML5 shiv required since jQuery and JQuery Mobile handle this -->
+	<link rel="stylesheet" href="../scripts/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="../scripts/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+	<!--first page	-->
+	<section id="firstPage" data-role="page">
+		<header data-role="header">
+			<h1>Page Transitions</h1>
+		</header>
+		<!--new way to address articles -->
+		<article data-role="main" class="ui-content">
+			<p>Let's try some transitions</p>
+			<p><a href="#secondPage">Fade to Page 2</a></p> <!--which is the default-->
+			<p><a href="#secondPage" data-transition="flip">Flip to Page 2</a></p>
+			<p><a href="#secondPage" data-transition="pop">Pop to Page 2</a></p>
+			<p><a href="#secondPage" data-transition="slide">Slide to Page 2</a></p>
+			<p><a href="#secondPage" data-transition="slidedown">Slidedown to Page 2</a></p>
+			<p><a href="#secondPage" data-transition="slideup">Slideup to Page 2</a></p>
+		</article>
+		<footer data-role="footer">
+			<h2>Footer page content</h2>
+		</footer>
+	</section>
+<!--second page-->
+	<section id="secondPage" data-role="page">
+		<header data-role="header">
+			<h1>This has been transitioned</h1>
+		</header>
+		<article  class="ui-content">
+			<p>This is the content for Page 2, it has new content</p>
+			<p><a href="#firstPage">Link to Page 1</a></p>
+		</article>
+		<footer data-role="footer">
+			<h2>Footer page content</h2>
+		</footer>
+	</section>
+</body>
+
+</html>

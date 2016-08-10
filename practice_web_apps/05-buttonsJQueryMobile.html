@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JQuery Mobile Practice = Buttons </title>
+	<!-- No HTML5 shiv required since jQuery and JQuery Mobile handle this -->
+	<link rel="stylesheet" href="../scripts/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="../scripts/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+	<!--first page	-->
+	<section id="firstPage" data-role="page">
+		<header data-role="header">
+			<h1>Buttons</h1>
+		</header>
+		<!--new way to address articles -->
+		<article class="ui-content">
+			<p>This is a link styled to look like a button</p>
+			<a href="#" class="ui-btn">Link Button</a>
+			<a href="#" class="ui-btn ui-mini">Link Button</a>
+			<p>This is a button created from the 'button' tag</p>
+			<button id="btn1" class="ui-btn">Button Element</button>
+			<button id="btn2" class="ui-btn ui-mini">Button Element</button>
+			<button id="btn3" class="ui-btn ui-mini" disabled="disabled">Disabled Button Element</button>
+			<p>This is a button made from and 'input' tag</p>
+			<input type="button" value="click me" />
+			<p>100% horizon vs. inline buttons</p>
+			<a href="#" class="ui-btn">Button 1</a>
+			<a href="#" class="ui-btn ui-shadow">Button 2</a>
+			<a href="#" class="ui-btn ui-btn-inline">Button 3</a>
+			<a href="#" class="ui-btn ui-btn-inline" width="50%">Button 4</a>
+
+			<p>These buttons are all part of a control group</p>
+			<div data-role="controlgroup">
+				<button class="ui-btn">Button A</button>
+				<button class="ui-btn">Button B</button>
+				<button class="ui-btn">Button C</button>
+			</div>
+			<p>These buttons are all part of a control group</p>
+			<div data-role="controlgroup" data-type="horizontal">
+				<button class="ui-btn">Button A</button>
+				<button class="ui-btn">Button B</button>
+				<button class="ui-btn">Button C</button>
+			</div>
+			<p>Buttons with icons in them</p>
+			
+			<a href="#" class="ui-btn ui-icon-arrow-u ui-btn-icon-top">Up</a>
+			<a href="#" class="ui-btn ui-icon-arrow-d ui-btn-icon-bottom">Down</a>
+			<a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Left</a>
+			<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Right</a>
+			<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext  ui-btn-icon-top ">No Text</a>
+			<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext  ui-btn-icon-top ui-corner-all">No Text</a>
+			<a href="#" class="ui-btn ui-icon-bars ui-btn-icon-notext  ui-btn-icon-top ui-corner-all">No Text</a>
+			<a href="#" class="ui-btn ui-icon-cloud ui-btn-icon-notext  ui-btn-icon-top ui-corner-all">No Text</a>
+
+		</article>
+		<footer data-role="footer">
+			<h2>Footer page content</h2>
+		</footer>
+	</section>
+
+</body>
+
+</html>
